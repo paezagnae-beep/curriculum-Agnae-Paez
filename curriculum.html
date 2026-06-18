@@ -1,168 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Currículum Vitae</title>
-<style>
-body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-line-height: 1.6;
-color: #333;
-background-color: #f4f7f6;
-margin: 0;
-padding: 40px 20px;
-}
-.container {
-max-width: 800px;
-margin: 0 auto;
-background: #fff;
-padding: 40px;
-border-radius: 8px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-header {
-text-align: center;
-border-bottom: 2px solid #3498db;
-padding-bottom: 20px;
-margin-bottom: 30px;
-}
-h1 {
-margin: 0 0 10px 0;
-color: #2c3e50;
-font-size: 2.5em;
-text-transform: uppercase;
-letter-spacing: 1px;
-}
-.contacto {
-color: #7f8c8d;
-font-size: 0.95em;
-}
-.contacto span {
-margin: 0 10px;
-}
-section {
-margin-bottom: 30px;
-}
-h2 {
-color: #2980b9;
-border-bottom: 1px solid #ecf0f1;
-padding-bottom: 5px;
-margin-top: 0;
-font-size: 1.4em;
-}
-.item {
-margin-bottom: 20px;
-}
-.item-header {
-display: flex;
-justify-content: space-between;
-font-weight: bold;
-color: #2c3e50;
-}
-.sub {
-font-style: italic;
-color: #7f8c8d;
-margin-bottom: 5px;
-}
-ul {
-margin: 5px 0 0 0;
-padding-left: 20px;
-}
-li {
-margin-bottom: 5px;
-}
-.habilidades-lista {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-gap: 10px;
-padding: 0;
-list-style: none;
-}
-.habilidades-lista li {
-background: #e8f4f8;
-color: #2980b9;
-padding: 8px 12px;
-border-radius: 4px;
-text-align: center;
-font-weight: 500;
-font-size: 0.9em;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            color: #111;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .contacto p {
+            margin: 5px 0;
+        }
+        .item-experiencia, .item-estudio {
+            margin-bottom: 15px;
+        }
+        .fecha {
+            font-style: italic;
+            color: #666;
+        }
+        .puesto, .titulo {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <img src="images (1).png" alt="Foto de Agnae Páez" style="float:left; margin:0 16px 12px 0; width:120px; height:120px; object-fit:cover; border-radius:50%">
+        <h1>Agnae Páez</h1>
+        
+        <div class="contacto">
+            <p><strong>Teléfono:</strong> 04249103505</p>
+            <p><strong>Correo electrónico:</strong> paezagnae@gmail.com</p>
+            <p><strong>Ubicación:</strong> Caracas, Venezuela</p>
 
-<div class="container">
+        </div>
+    </header>
 
-<!-- Encabezado con Nombre e Información de Contacto -->
-<header>
-<h1>Nombre Apellido</h1>
-<div class="contacto">
-<span>📍 Ciudad, País</span> |
-<span>📞 +58 123 456 7890</span> |
-<span>✉️ correo@email.com</span> |
-<span>🔗 linkedin.com/in/usuario</span>
-</div>
-</header>
+    <main>
+        <section>
+            <h2>Experiencia Laboral</h2>
 
-<!-- Experiencia Laboral -->
-<section>
-<h2>Experiencia Laboral</h2>
+            <!-- Bloque de experiencia 1 -->
+            <div class="item-experiencia">
+                <span class="puesto">Cajera</span> — 
+                <span class="empresa">Kanguro Parque</span>
+                <br>
+                <span class="fecha">Marzo 2025 – actualmente</span>
+            </div>
 
-<div class="item">
-<div class="item-header">
-<span>Desarrollador Web / Cajero / Cargo</span>
-<span>Enero 2026 - Presente</span>
-</div>
-<div class="sub">Nombre de la Empresa o Negocio</div>
-<ul>
-<li>Descripción breve de una de tus responsabilidades o logros principales en el puesto.</li>
-<li>Otra tarea importante que realizaste, destacando herramientas o habilidades usadas.</li>
-<li>Resolución de problemas específicos dentro del equipo o atención directa.</li>
-</ul>
-</div>
+            <div class="item-experiencia">
+                <span class="puesto">Cajera</span> — 
+                <span class="empresa">Bodega okela</span>
+                <br>
+                <span class="fecha">Marzo 2023 - Marzo 2024</span>
+            </div>
+        </section>
 
-<div class="item">
-<div class="item-header">
-<span>Puesto Anterior</span>
-<span>Marzo 2024 - Diciembre 2025</span>
-</div>
-<div class="sub">Nombre de la Empresa Anterior</div>
-<ul>
-<li>Responsabilidad clave del puesto y manejo de inventario o atención al público.</li>
-<li>Logros obtenidos durante el período laboral.</li>
-</ul>
-</div>
-</section>
+        <section>
+            <h2>Estudios</h2>
 
-<!-- Estudios / Educación -->
-<section>
-<h2>Educación</h2>
+            <div class="item-estudio">
+                <span class="titulo">TSU en informática</span>
+                <br>
+                <span class="institucion">Universidad Experimental Nacional del Transporte</span>
+                <br>
+                <span class="fecha">2024-2026</span>
+            </div>
 
-<div class="item">
-<div class="item-header">
-<span>Ingeniería en Informática / Licenciatura</span>
-<span>2022 - En Curso</span>
-</div>
-<div class="sub">Universidad o Instituto Académico</div>
-<p style="margin: 5px 0 0 0; color: #555;">Enfoque o mención especial relevante para tu perfil (opcional).</p>
-</div>
-</section>
+            <div class="item-estudio">
+                <span class="titulo">Bachillerato</span>
+                <br>
+                <span class="institucion">Instituto Educacional San Antonio</span>
+                <br>
+                <span class="fecha">2017-2022</span>
+            </div>
+        </section>
 
-<!-- Habilidades -->
-<section>
-<h2>Habilidades</h2>
-<ul class="habilidades-lista">
-<li>HTML5 / CSS3</li>
-<li>JavaScript</li>
-<li>Atención al Cliente</li>
-<li>Gestión de Inventario</li>
-<li>Trabajo en Equipo</li>
-<li>Resolución de Problemas</li>
-</ul>
-</section>
+        </section>
 
-</div>
+        <section>
+            <h2>Habilidades</h2>
+            <ul class="habilidades-lista">
+            <li>Atención al Cliente</li>
+            <li>Gestión de Inventario</li>
+            <li>Trabajo en Equipo</li>
+            <li>Resolución de Problemas</li>
+            </ul>
+        </section>
+    </main>
 
 </body>
 </html>
